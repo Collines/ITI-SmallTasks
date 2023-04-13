@@ -1,0 +1,19 @@
+[
+  {
+    "outputFileName": "wwwroot/css/min/all.css",
+    "inputFiles": [
+      "wwwroot/css/StyleSheet.css"
+    ],
+    "minify": { "enabled": false }
+  },
+  {
+    "outputFileName": "wwwroot/js/min/all.js",
+    "inputFiles": [
+      "wwwroot/jquery/jquery.js",
+      "wwwroot/jquery-validate/jquery-validate.js",
+      "wwwroot/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "wwwroot/twitter-bootstrap/js/bootstrap.js"
+    ],
+    "minify": { "enabled": false }
+  }
+]

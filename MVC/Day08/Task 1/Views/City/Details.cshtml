@@ -1,0 +1,36 @@
+﻿@model City
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>City</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CityName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CityName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.c)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.c.EmpFname)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.cNavigation)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.cNavigation.CountryName)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.cityID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

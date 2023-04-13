@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-2 text-light">
+        <a class="navbar-brand" href="/">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/City">Cities</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Country">Countries</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Department">Departments</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Employee">Employees</a>
+                </li>
+
+
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        @RenderBody()
+    </div>
+    @RenderSection("Scripts",false)
+    <script src="~/lib/jquery/jquery.min.js"></script>
+    <script src="~/lib/jquery-validate/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    </body>
+</html>
