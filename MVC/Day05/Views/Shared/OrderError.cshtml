@@ -1,0 +1,16 @@
+﻿@model HandleErrorInfo
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Error</title>
+</head>
+<body class="text-center">
+    <hgroup class="p-5">
+        <h1 class="text-danger fw-bold">Order Controller Error</h1>
+        <h2>An error occurred while processing your request.</h2>
+        <p><span class="fw-bold text-danger">"@Model.Exception.Message"</span> from Controller: <span class="text-danger fw-bold">@Model.ControllerName</span> @@Action: <span class="text-danger fw-bold">@Model.ActionName</span></p>
+    </hgroup>
+</body>
+</html>
