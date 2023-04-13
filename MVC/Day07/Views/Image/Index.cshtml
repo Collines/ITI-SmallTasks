@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h1>Please fill out this form</h1>
+
+<form method="post" action="/Image/Show" style="margin-top:30px">
+    <label>ID:</label>
+    <input type="number" name="ID" />
+    <label>Name:</label>
+    <input type="text" name="Name" />
+    <label>Image:</label>
+    <select name="Image">
+        @for(int i=1;i<=7;i++)
+            {
+                <option value="@i">@i</option>
+            }
+    </select>
+    <input type="submit" />
+</form>

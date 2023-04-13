@@ -1,0 +1,29 @@
+﻿@using Day02.Models
+@{ 
+    ViewBag.Title = "All Cars";
+    List<Car> Cars = ViewBag.Cars;
+}
+<h2>All Cars</h2>
+<table border="1" cellpadding="10">
+    <tr>
+        <th>Number</th>
+        <th>Color</th>
+        <th>Model</th>
+        <th>Manfacture</th>
+        <th>&nbsp;</th>
+        <th>&nbsp;</th>
+    </tr>
+    @foreach(Car car in Cars)
+            {
+                <tr>
+                    <th>@car.Num</th>
+                    <th>@car.Color</th>
+                    <th>@car.Model</th>
+                    <th>@car.Manfacture</th>
+                    <th><a href="edit/@car.Num">Edit</a></th>
+                    <th><a href="delete/@car.Num">Delete</a></th>
+                </tr>
+            }
+</table>
+
+<a href="create"><button>Add new</button></a>

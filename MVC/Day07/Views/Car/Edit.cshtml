@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Edit Car "+ViewBag.Car?.Num;
+}
+
+<h2>@ViewBag.Title</h2>
+
+<form method="post" action="edit">
+    <input type="hidden" name="num" value="@ViewBag.Car?.Num" />
+    <label>Car Color:</label>
+    <input type="text" value="@ViewBag.Car?.Color" name="Color" />
+    <label>Car Model:</label>
+    <input type="text" value="@ViewBag.Car.?Model" name="Model" />
+    <label>Car Manfacture:</label>
+    <input type="text" value="@ViewBag.Car.?Manfacture" name="Manfacture" />
+    <input type="submit" />
+</form>
