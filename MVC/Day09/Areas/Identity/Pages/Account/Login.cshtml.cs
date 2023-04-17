@@ -44,6 +44,7 @@ namespace Day09_remake.Areas.Identity.Pages.Account
         {
             [Required]
             [EmailAddress]
+            [Display(Name ="Email / Username")]
             public string Email { get; set; }
 
             [Required]

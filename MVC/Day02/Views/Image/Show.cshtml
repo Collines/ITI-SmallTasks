@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "Show";
+}
+
+<h2>Show</h2>
+
+<div>
+    @{ var imgurl = "/images/" + ViewBag.Image.ImgURL + ".jpg";}
+    <p>Your ID: @ViewBag.Image.ID</p>
+    <p>Your Name: @ViewBag.Image.Name</p>
+    <img src=@imgurl />
+</div>

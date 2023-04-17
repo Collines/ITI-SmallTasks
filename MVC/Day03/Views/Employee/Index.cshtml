@@ -1,0 +1,82 @@
+﻿@using Day03.Models
+
+@{
+    ViewBag.Title = "View";
+}
+
+<h2>Pick Department to show Employees</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<form method="post" action="/Employee/Index">
+    @if (ViewBag?.Departments?.Count > 0)
+    {
+        <select name="deptID" class="form-select mb-5">
+            @foreach (var item in ViewBag.Departments)
+            {
+                <option value="@item.DeptID">
+                    @item.DeptName
+                </option>
+            }
+        </select>
+    }
+    else
+    {
+        <table class="table">
+            <tr>
+                <th>
+                    <label for="EmpFname">First name</label>
+                </th>
+                <th>
+                    <label for="EmpLname">Last name</label>
+                </th>
+                <th>
+                    <label for="EmpSalary">Salary</label>
+                </th>
+                <th>
+                    <label for="EmpHDate">Hire Date</label>
+                </th>
+                <th>
+                    <label for="CtyID">CityID</label>
+                </th>
+                <th>
+                    <label for="DeptName">Department</label>
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (Employee item in ViewBag.Employees)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EmpFname)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EmpLname)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EmpSalary)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EmpHDate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CtyID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Department.DeptName)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.EmpID }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.EmpID }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.EmpID })
+                    </td>
+                </tr>
+            }
+
+        </table>
+    
+    }
+    <input type="submit" />
+</form>
