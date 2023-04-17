@@ -1,0 +1,35 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <form method="post">
+            <label>Name:</label>
+            <input name="name" type="text" />
+            <br />
+            <label>Birthdate:</label>
+            <input name="birthdate" type="date" />
+            <br />
+            <input type="checkbox" name="graduated" />
+            <br />
+            <input type="submit" />
+        </form>
+        @if (IsPost)
+        {
+            <div style="color:red;">Hello @Request["name"]</div>
+            <div style="color:blue;">Your birthdate @Request["birthdate"]</div>
+            <div>
+                @if(Request["graduated"] == "on"){
+                    <p>Yes Im graduated!</p>
+                }
+            </div>
+        }
+    </div>
+    @RenderPage("testpage.cshtml",new string[]{ "Test","Welcome" })
+</body>
+</html>

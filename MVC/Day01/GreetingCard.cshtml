@@ -1,0 +1,66 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <link rel="stylesheet" href="/style.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <form method="post">
+                <label>Choose background image:</label>
+                <br />
+                <select name="bgimg" style="width:100px;">
+                    @for (int i = 0; i <= 11; i++)
+                    {
+                        <option value=@i>@i</option>
+                    }
+                </select>
+                <br />
+                <label>Change Font color:</label>
+                <select name="fontcolor">
+                    <option value"purple">Purple</option>
+                    <option value"black">Black</option>
+                    <option value"teal">Teal</option>
+                    <option value"gray">Gray</option>
+                    <option value"hotpink">Hotpink</option>
+                </select>
+                <hr />
+                <label>Choose a greeting Type:</label>
+                <br />
+                <input type="radio" name="greetingtype" value="bd2.jpg&Happy Birthday" /> Birthday <br />
+                <input type="radio" name="greetingtype" value="well.gif&Get Well Soon" /> Get Well Soon <br />
+                <input type="radio" name="greetingtype" value="val.bmp&Happy Valentine" /> Valentine <br />
+                <input type="radio" name="greetingtype" value="congrats2.jpg&Congratulations" /> Congrats <br /> <br />
+                <input type="checkbox" name="showimg" value="on" /> Add the Picture
+                <textarea name="msg" placeholder="enter your message" style="display:block;margin-top:20px;padding:10px;"></textarea>
+                <input type="submit" value="preview" />
+            </form>
+        </div>
+        @if (IsPost)
+        {
+            string bgImg = Request["bgimg"]?.Length > 0 ? (Request["bgimg"] + ".jpg") : "";
+            string Img = Request["greetingtype"]?.Length >0 ?  Request["greetingtype"]?.Split('&')[0] : "";
+            string Head = Request["greetingtype"]?.Split('&')[1];
+            string color = Request["fontcolor"]?.Length > 0 ? Request["fontcolor"] : "";
+            bool addPicture = Request["showimg"]?.Length > 0 ? Request["showimg"] == "on" : false;
+            <div class="right" style="background:url(backgrounds/@bgImg);color:@color">
+                <div class="rightcontainer">
+                    <h1>@Head</h1>
+                    @if (addPicture)
+                    {
+                        <img src="images/@Img" />
+                    }
+                    <h2>
+                        @Request["msg"]
+                    </h2>
+                </div>
+            </div>
+        }
+
+    </div>
+</body>
+</html>
