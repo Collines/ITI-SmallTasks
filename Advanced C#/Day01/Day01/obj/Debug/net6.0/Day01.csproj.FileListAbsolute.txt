@@ -1,0 +1,15 @@
+D:\ITI\Solutions\Advanced C#\Day01\Mohamed Salah\Day01\Day01\bin\Debug\net6.0\Day01.exe
+D:\ITI\Solutions\Advanced C#\Day01\Mohamed Salah\Day01\Day01\bin\Debug\net6.0\Day01.deps.json
+D:\ITI\Solutions\Advanced C#\Day01\Mohamed Salah\Day01\Day01\bin\Debug\net6.0\Day01.runtimeconfig.json
+D:\ITI\Solutions\Advanced C#\Day01\Mohamed Salah\Day01\Day01\bin\Debug\net6.0\Day01.dll
+D:\ITI\Solutions\Advanced C#\Day01\Mohamed Salah\Day01\Day01\bin\Debug\net6.0\Day01.pdb
+D:\ITI\Solutions\Advanced C#\Day01\Mohamed Salah\Day01\Day01\obj\Debug\net6.0\Day01.csproj.AssemblyReference.cache
+D:\ITI\Solutions\Advanced C#\Day01\Mohamed Salah\Day01\Day01\obj\Debug\net6.0\Day01.GeneratedMSBuildEditorConfig.editorconfig
+D:\ITI\Solutions\Advanced C#\Day01\Mohamed Salah\Day01\Day01\obj\Debug\net6.0\Day01.AssemblyInfoInputs.cache
+D:\ITI\Solutions\Advanced C#\Day01\Mohamed Salah\Day01\Day01\obj\Debug\net6.0\Day01.AssemblyInfo.cs
+D:\ITI\Solutions\Advanced C#\Day01\Mohamed Salah\Day01\Day01\obj\Debug\net6.0\Day01.csproj.CoreCompileInputs.cache
+D:\ITI\Solutions\Advanced C#\Day01\Mohamed Salah\Day01\Day01\obj\Debug\net6.0\Day01.dll
+D:\ITI\Solutions\Advanced C#\Day01\Mohamed Salah\Day01\Day01\obj\Debug\net6.0\refint\Day01.dll
+D:\ITI\Solutions\Advanced C#\Day01\Mohamed Salah\Day01\Day01\obj\Debug\net6.0\Day01.pdb
+D:\ITI\Solutions\Advanced C#\Day01\Mohamed Salah\Day01\Day01\obj\Debug\net6.0\Day01.genruntimeconfig.cache
+D:\ITI\Solutions\Advanced C#\Day01\Mohamed Salah\Day01\Day01\obj\Debug\net6.0\ref\Day01.dll
