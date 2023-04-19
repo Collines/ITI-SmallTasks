@@ -1,0 +1,31 @@
+﻿<Window x:Class="Day10.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Day10"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1200">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="11*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <DataGrid Grid.Row="0" x:Name="dataGrid" Loaded="DataGridLoaded">
+            <!--<DataGrid.Columns>
+                <DataGridComboBoxColumn Header="Test"></DataGridComboBoxColumn>
+                <DataGridComboBoxColumn Header="Lol"></DataGridComboBoxColumn>
+                <DataGridComboBoxColumn Header="Test"></DataGridComboBoxColumn>
+                <DataGridTemplateColumn Header="world"></DataGridTemplateColumn>
+            </DataGrid.Columns>-->
+            <!--<DataGridCell>
+                
+            </DataGridCell>-->
+
+        </DataGrid>
+        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Grid.Row="1" VerticalAlignment="Center">
+            <Button Margin="5" Width="80" Click="Reload">Reload</Button>
+            <Button Margin="5" Width="80" Click="Save">Save</Button>
+        </StackPanel>
+    </Grid>
+</Window>
