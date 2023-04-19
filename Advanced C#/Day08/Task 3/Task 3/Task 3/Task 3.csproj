@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <RootNamespace>Task_3</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="mezo.png" />
+    <None Remove="mido.jpg" />
+    <None Remove="momo.png" />
+    <None Remove="omar.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="mezo.png" />
+    <Resource Include="mido.jpg" />
+    <Resource Include="momo.png" />
+    <Resource Include="omar.png" />
+  </ItemGroup>
+
+</Project>
