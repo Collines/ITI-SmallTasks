@@ -1,0 +1,36 @@
+﻿<Window x:Class="Day09.DetailedView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Day09"
+        mc:Ignorable="d"
+        Title="Detailed View" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <ListView x:Name="listView" Grid.Column="1">
+        </ListView>
+        <StackPanel x:Name="StackPanelCustom">
+            <Label x:Name="PrdID" FontSize="20"  Margin="10" HorizontalAlignment="Left"  VerticalAlignment="Center"/>
+            <TextBox Padding="6" x:Name="PrdName" FontSize="20" Margin="10" HorizontalAlignment="Left" TextWrapping="Wrap" Width="348"/>
+            <TextBox Padding="6" x:Name="PrdUnitPrice"  FontSize="20" Margin="10" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="TextBox" Width="341" RenderTransformOrigin="0.5,0.5">
+                <TextBox.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0.315"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBox.RenderTransform>
+            </TextBox>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Button Margin="5" Padding="7" Width="77" Click="Reload">Reload</Button>
+                <Button Margin="5" Padding="7" Width="77" Click="Save">Save</Button>
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Window>
