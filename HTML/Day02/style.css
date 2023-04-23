@@ -1,0 +1,69 @@
+.anch {
+  text-align: center;
+  display: block !important;
+}
+body {
+  background-color: #eee;
+}
+
+h1,
+h2,
+h3,
+h5,
+h6 {
+  text-align: center;
+}
+
+h4 {
+  text-decoration: underline;
+}
+
+#bold {
+  font-weight: bold;
+}
+
+#underline {
+  text-decoration: underline;
+}
+
+#italic {
+  font-style: italic;
+}
+
+#color {
+  color: red;
+}
+
+.next {
+  margin-left: 1200px;
+}
+
+.map {
+  text-align: center;
+}
+
+.contact {
+  display: block;
+  margin: 50px 0;
+}
+
+.submit {
+  text-align: center;
+}
+
+.form {
+  background: #efb2b1;
+  text-align: center;
+}
+
+table {
+  border-right: 10px solid #770100;
+  border-bottom: 10px solid #770100;
+  border-left: 10px solid #eca6a6;
+  border-top: 10px solid #eca6a6;
+  margin: 20px auto;
+}
+
+td {
+  padding: 3px;
+}

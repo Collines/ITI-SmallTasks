@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="form">
+    <form action="portal.html">
+      <table border="2">
+        <tr>
+          <td><label for="fname">First name</label></td>
+          <td><input type="text" id="fname" name="fname" /></td>
+        </tr>
+        <tr>
+          <td><label for="lname">Last name</label></td>
+          <td><input type="text" id="lname" name="lname" /></td>
+        </tr>
+        <tr>
+          <td><label for="pwd">Password</label></td>
+          <td><input type="password" id="pwd" name="pwd" /></td>
+        </tr>
+        <tr>
+          <td rowspan="2"><label for="gender">Gender</label></td>
+          <td>
+            <input type="radio" id="gender" name="gender" value="male" /> Male
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="radio" id="gender" name="gender" value="female" />
+            Female
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="month">Birthday:</label>
+            <select name="month" id="month">
+              <option selected>[Select Month]</option>
+              <option value="jan">January</option>
+              <option value="feb">February</option>
+              <option value="march">March</option>
+              <option value="apr">April</option>
+            </select>
+          </td>
+          <td>
+            <input type="text" placeholder="dd" name="day" /><input
+              name="year"
+              type="text"
+              placeholder="yyyy"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="subj" colspan="2">
+            <h1>Interests</h1>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="checkbox"
+              name="interests"
+              value="sports"
+              id="sports"
+            /><label for="sports">Sports</label>
+          </td>
+          <td>
+            <input
+              type="checkbox"
+              name="interests"
+              value="music"
+              id="music"
+            /><label for="music">Music</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="checkbox"
+              name="interests"
+              value="Books"
+              id="Books"
+            /><label for="Books">Books</label>
+          </td>
+          <td>
+            <input
+              type="checkbox"
+              name="interests"
+              value="Computer"
+              id="Computer"
+            /><label for="Computer">Computer Stuff</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="checkbox"
+              name="interests"
+              value="Fashion"
+              id="Fashion"
+            /><label for="Fashion">Fashion</label>
+          </td>
+          <td>
+            <input
+              type="checkbox"
+              name="interests"
+              value="Movies"
+              id="Movies"
+            /><label for="Movies">Movies</label>
+          </td>
+        </tr>
+        <tr>
+          <td class="submit" colspan="2"><input type="submit" /></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
