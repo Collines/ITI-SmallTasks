@@ -1,0 +1,48 @@
+.anch {
+  text-align: center;
+  display: block !important;
+}
+body {
+  background-color: #eee;
+}
+
+h1,
+h2,
+h3,
+h5,
+h6 {
+  text-align: center;
+}
+
+h4 {
+  text-decoration: underline;
+}
+
+#bold {
+  font-weight: bold;
+}
+
+#underline {
+  text-decoration: underline;
+}
+
+#italic {
+  font-style: italic;
+}
+
+#color {
+  color: red;
+}
+
+.next {
+  margin-left: 1200px;
+}
+
+.map {
+  text-align: center;
+}
+
+.contact {
+  display: block;
+  margin: 50px 0;
+}
