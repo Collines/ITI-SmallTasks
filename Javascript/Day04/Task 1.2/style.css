@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+img {
+  display: inline-block;
+  margin-right: 40px;
+  height: 100px;
+  width: 100px;
+}
+.first,
+.third {
+  margin-left: 350px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.second {
+  margin-left: 280px;
+}
+
+.container {
+  margin: 200px auto;
+  width: 900px;
+}

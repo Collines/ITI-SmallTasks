@@ -1,0 +1,10 @@
+label {
+  font-weight: bold;
+}
+.field {
+  margin-bottom: 50px;
+}
+input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+}

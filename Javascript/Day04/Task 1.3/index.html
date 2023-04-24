@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="welcome.html">
+      <div class="field">
+        <label for="name">Enter Your Name:</label>
+        <input type="text" id="name" name="name" />
+      </div>
+      <div class="field">
+        <label for="age">Enter Your Age:</label>
+        <input type="number" id="age" name="age" />
+      </div>
+      <div class="field">
+        <label>Select your Gender:</label> <br />
+        <br />
+        <input type="radio" id="male" name="gender" value="male" /><label
+          for="male"
+          ><img src="imgs/1.jpg" alt="male"
+        /></label>
+        <input type="radio" id="female" name="gender" value="female" /><label
+          for="female"
+          ><img src="imgs/2.jpg" alt="female"
+        /></label>
+      </div>
+      <div class="field">
+        <label for="color">Select your Favourite Color: </label>
+        <select name="color" id="color">
+          <option value="red">Red</option>
+          <option value="green">Green</option>
+          <option value="blue">Blue</option>
+        </select>
+      </div>
+      <div class="field"><input type="submit" value="register" /></div>
+    </form>
+    <script src="lib.js"></script>
+  </body>
+</html>
