@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        border: 2px solid red;
+        width: 1000px;
+        height: 500px;
+        margin: 0 auto;
+        position: relative;
+      }
+      .buttons {
+        text-align: center;
+        margin-top: 10px;
+      }
+      img {
+        position: absolute;
+      }
+      #left {
+        left: 0;
+        top: calc(50% - 25px);
+      }
+      #right {
+        right: 0;
+        top: calc(50% - 25px);
+      }
+      #top {
+        right: calc(50% - 15px);
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img id="left" src="imgs/icon1.gif" alt="icon1" />
+      <img id="right" src="imgs/icon2.gif" alt="icon2" />
+      <img id="top" src="imgs/TOP.JPG" alt="top" />
+    </div>
+    <div class="buttons">
+      <button id="go" onclick="move(this)">go</button>
+      <button onclick="reset()">reset</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
